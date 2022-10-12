@@ -1,0 +1,18 @@
+{
+  "name": "accueil",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "compilation": "sass --watch accueil/sass/main.scss:public/css/main.css",
+    "test": "launch index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "5.2.1",
+    "express": "^4.18.1",
+    "sass": "^1.54.9"
+  },
+  "devDependencies": {},
+  "description": ""
+}

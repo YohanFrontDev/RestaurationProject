@@ -1,0 +1,11 @@
+
+  .menu_part {
+    animation: fadein 4s ease-in-out;
+    @include desktop {
+      width: 400px;
+    }
+  }
+  .icon_anim {
+    @include icon_anim;
+  }
+  
