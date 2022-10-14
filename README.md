@@ -2,7 +2,9 @@
   npm install
 
 # compilation
-  npm run test
+  npm run watch
 
-# Test 
+# watch 
+launch sass --watch accueil/sass/main.scss:public/css/main.css
+# test 
   launch index.html
