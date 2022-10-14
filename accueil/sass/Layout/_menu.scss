@@ -1,11 +1,16 @@
+.card_menu:nth-child(1) {
+  animation: up  3s ease-in-out 0.1s forwards;
+}
+.card_menu:nth-child(2) {
+  animation: up  3s ease-in-out 0.6s forwards;
+}
+.card_menu:nth-child(3) {
+  animation: up  3s ease-in-out 1.2s forwards;
+}
+.card_menu:nth-child(4) {
+  animation: up  3s ease-in-out 1.8s forwards;
+}
 
-  .menu_part {
-    animation: fadein 4s ease-in-out;
-    @include desktop {
-      width: 400px;
-    }
-  }
-  .icon_anim {
-    @include icon_anim;
-  }
-  
+.icon_anim {
+  @include icon_anim;
+}

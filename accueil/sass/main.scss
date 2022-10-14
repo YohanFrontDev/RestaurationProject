@@ -9,7 +9,6 @@
 
 
 @import "./Layout/menu";
-@import "./Layout/button";
 
 @import "./Components/menu-header";
 
@@ -20,18 +19,58 @@
 }
 
 #Fonction {
-    margin: 0 0 4rem 2rem;
+    @include mobile {
+        margin: 0% 0% 7% 4% ;
+    }
+    @include tablet{
+        margin: 0% 20% 7% 20% ;
+    }
+    @include desktop {
+        margin: 5% 30% 5% 33%; 
+    }
 }
 
 #Restaurant {
     background-color: rgb(244, 239, 239);
-    padding: 3rem 0rem 3rem 2rem;
+    padding: 3rem 0% 3rem 10%;
+    
+    @include tablet {
+        padding: 3rem 0rem 3rem 3rem;
+    }
+    @include desktop {
+        padding: 3rem 0rem 3rem 3rem;
+    }
 }
 
-#Menu {
+
+section{
+    @include mobile {
+        margin: 0;
+    }
+    @include tablet{
+        margin: 0 20% 0 20%;
+    }
+    @include desktop {
+        margin: 0 30% 0 30%;
+    } 
+}
+
+#Menu{
+    height: 80%;
     background-color: #dcdcdc;
+    z-index:2;
+    .menu_display{
+        max-height: 100%;
+        @include tablet {
+            max-width: 60%;
+        }
+        @include desktop {
+            max-width: 40%;
+        }
+    }
 }
-
+#footer_menu{
+}
 // Sections Home
 
 .navbar {
@@ -90,9 +129,11 @@
         border: none;
         cursor: pointer;
         z-index: 50;
-        &:hover{
-            background: lighten($color-primary,5%);
-          }
+
+        &:hover {
+            background: lighten($color-primary, 5%);
+        }
+
         span {
             font-size: 1rem;
             color: white;
@@ -122,9 +163,15 @@
     .card_stage {
         background-color: rgb(240, 240, 240);
         height: 4.8rem;
-        width: 95%;
-        max-width: 100%;
-        margin: 0.8rem 1rem 0.5rem 0;
+        width: 90%;
+        max-width: 90%;
+        margin: 0.8rem 1rem 0.5rem 6%;
+        @include tablet{
+            margin: 0.8rem 1rem 0.5rem 5%;
+        }
+        @include desktop{
+            margin: 0.8rem 1rem 0.5rem 5%;
+        }
         position: relative;
         display: flex;
         flex-direction: row;
@@ -273,26 +320,26 @@
     p {
         margin: 0;
     }
-
-
 }
 
 //Section Menu
 .menu_img img {
     object-fit: cover;
     width: 100%;
+    max-height: 10% ;
+    z-index: 2;
 }
 
 .menu_display {
     background-color: #dcdcdc;
     width: 100%;
-    min-height: 1200px;
+    height: 1000px;
     padding: 2rem 1rem 1rem 1.5rem;
-    position: absolute;
-    top: 18rem;
-    border-radius: 2.5rem;
+    border-radius: 2.5rem 2.5rem 0 0;
     background-color: rgb(243, 243, 243);
-
+    position: absolute;
+    top: 25%;
+    z-index: 5;
     .menu_title {
         display: flex;
 
@@ -317,6 +364,7 @@
         width: 250px;
         height: 3rem;
         border-radius: 20px;
+        margin-top: 5% ;
         padding-top: 1rem;
         background-image: $linear-gradient;
         text-decoration: none;
@@ -356,38 +404,45 @@
     font-weight: 600;
 }
 
-#cover-spin{
-    background-color: rgba(255,255,255,0.7);
-    position:fixed;
-    width:100%;
+.cover-spin {
+    background-color: rgba(255, 255, 255, 0.7);
+    width: 100%;
     height: 100%;
-    left:0;right:0;top:0;bottom:0;
-    animation: opacity 2s ;
-    opacity: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    animation: opacity 2s;
+    display: inline-block;
 }
 
 
 .spin {
     opacity: 0;
-    position:fixed;
-    width:100%;
+    position: fixed;
+    width: 100%;
     height: 100%;
-    left:0;right:0;top:0;bottom:0;
-    animation: opacity 2s ;
-    z-index:-5;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    animation: opacity 2s;
+    z-index: -5;
 }
 
 .spin::after {
-    content:'';
-    display:block;
-    position:absolute;
-    left:48%;top:40%;
-    width:40px;height:40px;
-    border-style:solid;
-    border-color:black;
-    border-top-color:transparent;
+    content: '';
+    display: block;
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    width: 40px;
+    height: 40px;
+    border-style: solid;
+    border-color: black;
+    border-top-color: transparent;
     border-width: 5px;
-    border-radius:50%;
+    border-radius: 50%;
     -webkit-animation: spin 0.8s linear infinite;
     animation: spin 0.8s linear infinite;
     z-index: -1;

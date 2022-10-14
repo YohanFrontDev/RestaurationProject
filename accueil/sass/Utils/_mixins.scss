@@ -8,6 +8,7 @@
   cursor: pointer;
   white-space: nowrap;
   text-overflow: ellipsis;
+  opacity: 0;
   overflow: hidden;
   transition: padding-right 450ms ease-in-out;
 
@@ -25,17 +26,6 @@
   }
 }
 
-
-
-// @mixin loader{
-//   @if $right-opacity{
-//     filter:blur(10px)
-//   }
-//   @else{
-//     filter: blur(10px);
-//   }
-// }
-
 @mixin icon_anim {
   display: flex;
   justify-content: center;
@@ -51,9 +41,18 @@
   top: 0;
   opacity: 0;
   transition: transform 330ms ease-in-out;
+
   & .fa-check-circle {
     color: #fff;
     transition: transform 500ms ease-in-out;
+  }
+}
+
+
+
+@mixin mobile {
+  @media screen and (min-width: map-get($breakpoints, mobile)) {
+    @content;
   }
 }
 
@@ -75,8 +74,3 @@
   }
 }
 
-@mixin medium-screen {
-  @media screen and (min-width: map-get($breakpoints, medium)) {
-    @content;
-  }
-}

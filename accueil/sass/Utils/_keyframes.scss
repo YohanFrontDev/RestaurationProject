@@ -29,12 +29,27 @@
       opacity: 0;
     }
   }
+  @keyframes up {
+    0% {
+      opacity: 0;
+      transform: translateY(35%)
+    }
+
+    80%{
+      opacity: 0.5;
+    }
+
+    100%{
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
   @keyframes fadein {
     from {
-      opacity: 0;
+      
     }
     to {
-      opacity: 1;
+      
     }
   }
   @keyframes fill {
@@ -53,21 +68,11 @@
 
 @keyframes opacity{
   0%{
-    display: inline-block;
-    opacity: 0;
-    z-index:-5
+    opacity: 1;
   }
-  1%{
-    z-index: 50;
-      opacity: 1;
-  }
-  99%{
-      z-index: 50;
-      opacity: 1;
-  }
+  
   100%{
-    opacity: 0;
-      z-index:-5
+    opacity: 1;
   }
 }
 
