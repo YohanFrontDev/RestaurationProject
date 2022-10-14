@@ -59,18 +59,9 @@ section{
     height: 80%;
     background-color: #dcdcdc;
     z-index:2;
-    .menu_display{
-        max-height: 100%;
-        @include tablet {
-            max-width: 60%;
-        }
-        @include desktop {
-            max-width: 40%;
-        }
-    }
+    
 }
-#footer_menu{
-}
+
 // Sections Home
 
 .navbar {
@@ -83,6 +74,15 @@ section{
 
 .navbar_restaurant {
     display: flex;
+    a{
+        @include tablet {
+            margin: 0.5% 25% 0% 20%;
+        }
+        @include desktop {
+            margin: 0.5% 35% 0% 30%;
+        }
+    }
+    
 
     a {
         position: absolute;
@@ -326,18 +326,21 @@ section{
 .menu_img img {
     object-fit: cover;
     width: 100%;
-    max-height: 10% ;
+    height: 20rem ;
     z-index: 2;
 }
+
+
 
 .menu_display {
     background-color: #dcdcdc;
     width: 100%;
     height: 1000px;
+    margin-top: -3rem;
     padding: 2rem 1rem 1rem 1.5rem;
     border-radius: 2.5rem 2.5rem 0 0;
     background-color: rgb(243, 243, 243);
-    position: absolute;
+    position: relative;
     top: 25%;
     z-index: 5;
     .menu_title {
