@@ -18,7 +18,7 @@
     text-align: center;
 }
 
-footer{
+footer {
     @include mobile {
         margin: 0% 0% 0% 0%;
     }
@@ -29,8 +29,9 @@ footer{
 
     @include desktop {
         margin: 0% 30% 0% 30%;
-    } 
+    }
 }
+
 #Fonction {
     @include mobile {
         margin: 0% 0% 7% 4%;
