@@ -25,10 +25,6 @@ h6 {
   margin: 0;
 }
 
-footer {
-  margin: auto;
-}
-
 h1,
 h6 {
   font-family: Shrikhand, Roboto, sans-serif;
@@ -216,22 +212,6 @@ html {
 
 #Home {
   text-align: center;
-}
-
-@media screen and (min-width: 350px) {
-  footer {
-    margin: 0% 0% 0% 0%;
-  }
-}
-@media screen and (min-width: 768px) {
-  footer {
-    margin: 0% 20% 0% 20%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  footer {
-    margin: 0% 30% 0% 30%;
-  }
 }
 
 @media screen and (min-width: 350px) {
