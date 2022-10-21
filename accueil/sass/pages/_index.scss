@@ -280,6 +280,7 @@ section {
 }
 
 .lock:hover .icon-lock {
+    animation: fill 1s;
     color: #9256dcbf;
     text-shadow: 0 0 3px#FF79DA, 0 0 3px #9356DC;
     display: inline;

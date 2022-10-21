@@ -100,11 +100,11 @@ html {
   width: 100%;
   height: 100%;
   top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   z-index: 1000;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: opacity 0.3s 2s forwards;
+  animation: opacity 2s forwards;
 }
 
 .spin {
@@ -124,10 +124,10 @@ html {
   content: "";
   display: block;
   position: absolute;
-  left: 48%;
+  left: 40%;
   top: 40%;
-  width: 40px;
-  height: 40px;
+  width: 4rem;
+  height: 4rem;
   border-style: solid;
   border-color: black;
   border-top-color: transparent;
@@ -176,38 +176,6 @@ html {
   transition: transform 500ms ease-in-out;
 }
 
-@media screen and (min-width: 350px) {
-  #footer {
-    margin: 0% 0% 0% 0%;
-  }
-}
-@media screen and (min-width: 768px) {
-  #footer {
-    margin: 0% 20% 0% 20%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  #footer {
-    margin: 0% 30% 0% 30%;
-  }
-}
-
-@media screen and (min-width: 350px) {
-  header {
-    margin: 0% 0% 0% 0%;
-  }
-}
-@media screen and (min-width: 768px) {
-  header {
-    margin: 0% 20% 0% 20%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header {
-    margin: 0% 30% 0% 30%;
-  }
-}
-
 .footer_spacing {
   background-color: rgb(64, 64, 64);
   color: white;
@@ -234,6 +202,38 @@ html {
 }
 .footer_spacing p {
   margin: 0;
+}
+
+@media screen and (min-width: 350px) {
+  header {
+    margin: 0% 0% 0% 0%;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    margin: 0% 20% 0% 20%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header {
+    margin: 0% 30% 0% 30%;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  #footer {
+    margin: 0% 0% 0% 0%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #footer {
+    margin: 0% 20% 0% 20%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #footer {
+    margin: 0% 30% 0% 30%;
+  }
 }
 
 #Home {
@@ -504,6 +504,7 @@ html {
 }
 
 .lock:hover .icon-lock {
+  animation: fill 1s;
   color: rgba(146, 86, 220, 0.7490196078);
   text-shadow: 0 0 3px #FF79DA, 0 0 3px #9356DC;
   display: inline;
@@ -628,13 +629,9 @@ html {
     opacity: 1;
   }
 }
-@keyframes fadein {}
 @keyframes fill {
   0% {
-    opacity: 0;
-  }
-  50% {
-    opacity: 0.5;
+    opacity: 0.2;
   }
   100% {
     opacity: 1;
