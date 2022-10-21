@@ -1,5 +1,7 @@
+@import "../Utils/_mixins";
+
 .card_menu{
-    @include card_menu
+    @include card_menu;
 }
 .line_description {
     display: flex;
