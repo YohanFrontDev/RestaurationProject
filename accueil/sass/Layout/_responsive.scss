@@ -10,6 +10,69 @@ header{
         margin: 0% 30% 0% 30%;
     }  
 }
+.card_stage{
+    @include tablet {
+        margin: 0.8rem 1rem 0.5rem 5%;
+    }
+    
+    @include desktop {
+        margin: 0.8rem 1rem 0.5rem 5%;
+    }
+}
+
+
+
+.spin::after {
+    @include tablet {
+        left: 44%;
+        top: 45%;
+        height: 6rem;
+        width: 6rem;
+    } 
+    @include desktop {
+        left: 48%;
+        top: 48%;
+        height: 6rem;
+        width: 6rem;
+    } 
+}
+
+.navbar_restaurant a {
+
+    @include tablet {
+        margin: 0.5% 25% 0% 20%;
+    }
+
+    @include desktop {
+        margin: 0.5% 35% 0% 30%;
+    }
+}
+
+
+#Restaurant {
+    @include tablet {
+        padding: 3rem 0rem 3rem 3rem;
+    }
+    
+    @include desktop {
+        padding: 3rem 5% 3rem 5%;
+    }   
+}
+#Fonction {
+    @include mobile {
+        margin: 0% 0% 7% 4%;
+    }
+
+    @include tablet {
+        margin: 0% 20% 7% 20%;
+    }
+
+    @include desktop {
+        margin: 5% 30% 5% 33%;
+    }
+}
+
+
 
 #footer {
     @include mobile {

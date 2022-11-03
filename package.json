@@ -4,7 +4,9 @@
   "main": "index.html",
   "scripts": {
     "watch": "sass --watch accueil/sass/main.scss:accueil/public/css/main.css",
-    "test": "launch index.html"
+    "test": "launch index.html",
+    "toto": "sass --version"
+
   },
   "author": "",
   "license": "ISC",

@@ -125,9 +125,9 @@ html {
   display: block;
   position: absolute;
   left: 40%;
-  top: 40%;
-  width: 4rem;
-  height: 4rem;
+  top: 45%;
+  width: 5rem;
+  height: 5rem;
   border-style: solid;
   border-color: black;
   border-top-color: transparent;
@@ -204,71 +204,13 @@ html {
   margin: 0;
 }
 
-@media screen and (min-width: 350px) {
-  header {
-    margin: 0% 0% 0% 0%;
-  }
-}
-@media screen and (min-width: 768px) {
-  header {
-    margin: 0% 20% 0% 20%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  header {
-    margin: 0% 30% 0% 30%;
-  }
-}
-
-@media screen and (min-width: 350px) {
-  #footer {
-    margin: 0% 0% 0% 0%;
-  }
-}
-@media screen and (min-width: 768px) {
-  #footer {
-    margin: 0% 20% 0% 20%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  #footer {
-    margin: 0% 30% 0% 30%;
-  }
-}
-
 #Home {
   text-align: center;
-}
-
-@media screen and (min-width: 350px) {
-  #Fonction {
-    margin: 0% 0% 7% 4%;
-  }
-}
-@media screen and (min-width: 768px) {
-  #Fonction {
-    margin: 0% 20% 7% 20%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  #Fonction {
-    margin: 5% 30% 5% 33%;
-  }
 }
 
 #Restaurant {
   background-color: rgb(244, 239, 239);
   padding: 3rem 0% 3rem 10%;
-}
-@media screen and (min-width: 768px) {
-  #Restaurant {
-    padding: 3rem 0rem 3rem 3rem;
-  }
-}
-@media screen and (min-width: 1280px) {
-  #Restaurant {
-    padding: 3rem 0rem 3rem 3rem;
-  }
 }
 
 @media screen and (min-width: 350px) {
@@ -301,16 +243,6 @@ html {
 
 .navbar_restaurant {
   display: flex;
-}
-@media screen and (min-width: 768px) {
-  .navbar_restaurant a {
-    margin: 0.5% 25% 0% 20%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .navbar_restaurant a {
-    margin: 0.5% 35% 0% 30%;
-  }
 }
 .navbar_restaurant a {
   position: absolute;
@@ -356,6 +288,7 @@ html {
 }
 .presentation .primary_btn:hover {
   background: #a16be0;
+  box-shadow: 0px 5px 5px rgb(194, 194, 194);
 }
 .presentation .primary_btn span {
   font-size: 1rem;
@@ -395,20 +328,6 @@ html {
   box-shadow: 0px 15px 15px -5px rgb(214, 214, 214);
   cursor: pointer;
 }
-@media screen and (min-width: 768px) {
-  .stage1 .card_stage,
-.stage2 .card_stage,
-.stage3 .card_stage {
-    margin: 0.8rem 1rem 0.5rem 5%;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .stage1 .card_stage,
-.stage2 .card_stage,
-.stage3 .card_stage {
-    margin: 0.8rem 1rem 0.5rem 5%;
-  }
-}
 .stage1 .card_stage .number,
 .stage2 .card_stage .number,
 .stage3 .card_stage .number {
@@ -445,7 +364,7 @@ html {
 .card_restauration {
   margin: 1rem 0;
   position: relative;
-  max-width: 90%;
+  max-width: 100%;
   max-height: 280px;
   border-radius: 0.8rem;
   overflow: hidden;
@@ -557,6 +476,10 @@ html {
   display: flex;
   justify-content: center;
 }
+.menu_display .btn_cmd:hover {
+  background: #a16be0;
+  box-shadow: 0px 5px 5px rgb(194, 194, 194);
+}
 
 .short_green {
   margin: 0.5rem 0 0.5rem 0;
@@ -585,6 +508,104 @@ html {
 
 .bold_text {
   font-weight: 600;
+}
+
+@media screen and (min-width: 350px) {
+  header {
+    margin: 0% 0% 0% 0%;
+  }
+}
+@media screen and (min-width: 768px) {
+  header {
+    margin: 0% 20% 0% 20%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  header {
+    margin: 0% 30% 0% 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card_stage {
+    margin: 0.8rem 1rem 0.5rem 5%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .card_stage {
+    margin: 0.8rem 1rem 0.5rem 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .spin::after {
+    left: 44%;
+    top: 45%;
+    height: 6rem;
+    width: 6rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .spin::after {
+    left: 48%;
+    top: 48%;
+    height: 6rem;
+    width: 6rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navbar_restaurant a {
+    margin: 0.5% 25% 0% 20%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .navbar_restaurant a {
+    margin: 0.5% 35% 0% 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #Restaurant {
+    padding: 3rem 0rem 3rem 3rem;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #Restaurant {
+    padding: 3rem 5% 3rem 5%;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  #Fonction {
+    margin: 0% 0% 7% 4%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #Fonction {
+    margin: 0% 20% 7% 20%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #Fonction {
+    margin: 5% 30% 5% 33%;
+  }
+}
+
+@media screen and (min-width: 350px) {
+  #footer {
+    margin: 0% 0% 0% 0%;
+  }
+}
+@media screen and (min-width: 768px) {
+  #footer {
+    margin: 0% 20% 0% 20%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  #footer {
+    margin: 0% 30% 0% 30%;
+  }
 }
 
 @keyframes grow {
