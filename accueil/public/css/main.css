@@ -565,9 +565,14 @@ html {
   }
 }
 
+@media screen and (min-width: 350px) {
+  #Restaurant {
+    padding: 3rem 3rem 3rem 3rem;
+  }
+}
 @media screen and (min-width: 768px) {
   #Restaurant {
-    padding: 3rem 0rem 3rem 3rem;
+    padding: 3rem 3rem 3rem 3rem;
   }
 }
 @media screen and (min-width: 1280px) {
