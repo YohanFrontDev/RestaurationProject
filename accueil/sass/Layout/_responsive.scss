@@ -1,20 +1,8 @@
-header{
-    @include mobile {
-        margin: 0% 0% 0% 0%;
-    }
-  
-    @include tablet {
-        margin: 0% 20% 0% 20%;
-    } 
-    @include desktop {
-        margin: 0% 30% 0% 30%;
-    }  
-}
-.card_stage{
+.card_stage {
     @include tablet {
         margin: 0.8rem 1rem 0.5rem 5%;
     }
-    
+
     @include desktop {
         margin: 0.8rem 1rem 0.5rem 5%;
     }
@@ -28,64 +16,107 @@ header{
         top: 45%;
         height: 6rem;
         width: 6rem;
-    } 
+    }
+
     @include desktop {
         left: 48%;
         top: 48%;
         height: 6rem;
         width: 6rem;
-    } 
+    }
 }
 
 .navbar_restaurant a {
 
     @include tablet {
-        margin: 0.5% 25% 0% 20%;
+        margin: 0.5% 20% 0% 20%;
     }
 
     @include desktop {
-        margin: 0.5% 35% 0% 30%;
+        margin: 0.5% 0% 0% 20%;
     }
 }
 
-
-#Restaurant {
-    @include mobile {
-        padding: 3rem 3rem 3rem 3rem;
-    }
-    @include tablet {
-        padding: 3rem 3rem 3rem 3rem;
-    }
+.stage1,
+.stage2,
+.stage3 {
     
+    @include tablet {
+        width:50%
+    }
     @include desktop {
-        padding: 3rem 5% 3rem 5%;
-    }   
+        width:33%;
+    }
 }
+
 #Fonction {
     @include mobile {
         margin: 0% 0% 7% 4%;
     }
 
-    @include tablet {
-        margin: 0% 20% 7% 20%;
-    }
+
 
     @include desktop {
-        margin: 5% 30% 5% 33%;
+        margin: 5% 5% 5% 5%;
     }
 }
 
+.restaurant_title {
+    @include mobile {
+        margin: 0 0 1rem 1rem;
+    }
+    @include tablet{
+        margin: 0 0 1rem 2rem;
+    }
+}
 
+.card_restauration{
+    @include mobile {
+        width: 95%;
+    }
+    @include tablet {
+        width: 45%;
+    }
+    @include desktop {
+        width: 20%;
+    }
+    
+}
+.flexing{
+    @include desktop {
+        display: flex;
+    }
+}
+
+.extension{
+    @include desktop {
+        width: 30%;
+        margin: 2rem 2rem 2rem 2rem;
+    }
+}
+.wrapping_element{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Restaurant {
+    @include mobile {
+        padding: 3rem 3rem 3rem 3rem;
+    }
+
+
+    @include desktop {
+        padding: 3rem 0% 3rem 0%;
+    }
+}
 
 #footer {
     @include mobile {
         margin: 0% 0% 0% 0%;
     }
-  
-    @include tablet {
-        margin: 0% 20% 0% 20%;
-    } 
+
+
     @include desktop {
-        margin: 0% 30% 0% 30%;
-    }  
+        margin: 0% 0% 0% 0%;
+    }
 }
