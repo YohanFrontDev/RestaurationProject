@@ -99,7 +99,7 @@ section {
 // Section Fonction 
 
 .fonctionnement {
-    margin: 2.5rem 0 1rem 0;
+    margin: 2.5rem 0 1rem 0.5rem;
 }
 
 .stage1,
@@ -157,7 +157,7 @@ section {
 // Section Restaurant
 
 .restaurant_title {
-    margin: 0 0 1rem 4rem;
+    margin: 0 0 0rem 4rem;
 }
 
 .card_restauration {
@@ -353,7 +353,9 @@ section {
 
 .bolder_text {
     font-size: 1.7rem;
+    margin: 1rem 0rem 1rem 0rem;
     font-weight: 600;
+    color: black;
 }
 
 .bold_text {

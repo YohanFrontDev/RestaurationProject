@@ -51,7 +51,7 @@
 
 #Fonction {
     @include mobile {
-        margin: 0% 0% 7% 4%;
+        margin: 10% 0% 7% 4%;
     }
 
 
@@ -63,7 +63,7 @@
 
 .restaurant_title {
     @include mobile {
-        margin: 0 0 1rem 1rem;
+        margin: 0 0 0rem 0rem;
     }
     @include tablet{
         margin: 0 0 1rem 2rem;
@@ -72,7 +72,7 @@
 
 .card_restauration{
     @include mobile {
-        width: 95%;
+        width: 105%;
     }
     @include tablet {
         width: 45%;
@@ -85,6 +85,12 @@
 .flexing{
     @include desktop {
         display: flex;
+    }
+}
+
+.fonctionnement {
+    @include desktop {
+        margin: 2.5rem 0 1rem -4%;
     }
 }
 
@@ -101,7 +107,7 @@
 
 #Restaurant {
     @include mobile {
-        padding: 3rem 3rem 3rem 3rem;
+        padding: 1rem 2rem 3rem 2rem;
     }
 
 

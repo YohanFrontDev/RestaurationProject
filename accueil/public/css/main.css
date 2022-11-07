@@ -290,7 +290,7 @@ html {
 }
 
 .fonctionnement {
-  margin: 2.5rem 0 1rem 0;
+  margin: 2.5rem 0 1rem 0.5rem;
 }
 
 .stage1,
@@ -351,7 +351,7 @@ html {
 }
 
 .restaurant_title {
-  margin: 0 0 1rem 4rem;
+  margin: 0 0 0rem 4rem;
 }
 
 .card_restauration {
@@ -522,7 +522,9 @@ html {
 
 .bolder_text {
   font-size: 1.7rem;
+  margin: 1rem 0rem 1rem 0rem;
   font-weight: 600;
+  color: black;
 }
 
 .bold_text {
@@ -585,7 +587,7 @@ html {
 
 @media screen and (min-width: 350px) {
   #Fonction {
-    margin: 0% 0% 7% 4%;
+    margin: 10% 0% 7% 4%;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -596,7 +598,7 @@ html {
 
 @media screen and (min-width: 350px) {
   .restaurant_title {
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 0rem 0rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -607,7 +609,7 @@ html {
 
 @media screen and (min-width: 350px) {
   .card_restauration {
-    width: 95%;
+    width: 105%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -628,6 +630,12 @@ html {
 }
 
 @media screen and (min-width: 1280px) {
+  .fonctionnement {
+    margin: 2.5rem 0 1rem -4%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
   .extension {
     width: 30%;
     margin: 2rem 2rem 2rem 2rem;
@@ -641,7 +649,7 @@ html {
 
 @media screen and (min-width: 350px) {
   #Restaurant {
-    padding: 3rem 3rem 3rem 3rem;
+    padding: 1rem 2rem 3rem 2rem;
   }
 }
 @media screen and (min-width: 1280px) {
