@@ -609,7 +609,7 @@ html {
 
 @media screen and (min-width: 350px) {
   .card_restauration {
-    width: 105%;
+    width: 100%;
   }
 }
 @media screen and (min-width: 768px) {
@@ -629,6 +629,11 @@ html {
   }
 }
 
+@media screen and (min-width: 350px) {
+  .fonctionnement {
+    margin: 2.5rem 0 1rem 3%;
+  }
+}
 @media screen and (min-width: 1280px) {
   .fonctionnement {
     margin: 2.5rem 0 1rem -4%;
